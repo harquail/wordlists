@@ -21,6 +21,14 @@
 		15D782B9193294FA00790D25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D7829B193294FA00790D25 /* UIKit.framework */; };
 		15D782C1193294FA00790D25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15D782BF193294FA00790D25 /* InfoPlist.strings */; };
 		15D782C3193294FA00790D25 /* WordListsParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D782C2193294FA00790D25 /* WordListsParserTests.m */; };
+		15D782D41932B40E00790D25 /* 2of4brif.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782CC1932B40E00790D25 /* 2of4brif.txt */; };
+		15D782D51932B40E00790D25 /* 5desk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782CD1932B40E00790D25 /* 5desk.txt */; };
+		15D782D61932B40E00790D25 /* enable2k.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782CE1932B40E00790D25 /* enable2k.txt */; };
+		15D782D71932B40E00790D25 /* letterpress.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782CF1932B40E00790D25 /* letterpress.txt */; };
+		15D782D81932B40E00790D25 /* sowpods.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782D01932B40E00790D25 /* sowpods.txt */; };
+		15D782D91932B40E00790D25 /* TWL06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782D11932B40E00790D25 /* TWL06.txt */; };
+		15D782DA1932B40E00790D25 /* wordsEn.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782D21932B40E00790D25 /* wordsEn.txt */; };
+		15D782DB1932B40E00790D25 /* yawl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 15D782D31932B40E00790D25 /* yawl.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +46,6 @@
 		15D78297193294F900790D25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15D78299193294FA00790D25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		15D7829B193294FA00790D25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		15D7829F193294FA00790D25 /* WordListsParser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordListsParser-Info.plist"; sourceTree = "<group>"; };
 		15D782A1193294FA00790D25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15D782A3193294FA00790D25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15D782A5193294FA00790D25 /* WordListsParser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordListsParser-Prefix.pch"; sourceTree = "<group>"; };
@@ -53,6 +60,14 @@
 		15D782BE193294FA00790D25 /* WordListsParserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordListsParserTests-Info.plist"; sourceTree = "<group>"; };
 		15D782C0193294FA00790D25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15D782C2193294FA00790D25 /* WordListsParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListsParserTests.m; sourceTree = "<group>"; };
+		15D782CC1932B40E00790D25 /* 2of4brif.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2of4brif.txt; sourceTree = "<group>"; };
+		15D782CD1932B40E00790D25 /* 5desk.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5desk.txt; sourceTree = "<group>"; };
+		15D782CE1932B40E00790D25 /* enable2k.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enable2k.txt; sourceTree = "<group>"; };
+		15D782CF1932B40E00790D25 /* letterpress.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = letterpress.txt; sourceTree = "<group>"; };
+		15D782D01932B40E00790D25 /* sowpods.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sowpods.txt; sourceTree = "<group>"; };
+		15D782D11932B40E00790D25 /* TWL06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWL06.txt; sourceTree = "<group>"; };
+		15D782D21932B40E00790D25 /* wordsEn.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordsEn.txt; sourceTree = "<group>"; };
+		15D782D31932B40E00790D25 /* yawl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yawl.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,7 @@
 		15D7829D193294FA00790D25 /* WordListsParser */ = {
 			isa = PBXGroup;
 			children = (
+				15D782DC1932B41500790D25 /* WordLists */,
 				15D782A6193294FA00790D25 /* AppDelegate.h */,
 				15D782A7193294FA00790D25 /* AppDelegate.m */,
 				15D782A9193294FA00790D25 /* Main.storyboard */,
@@ -126,7 +142,6 @@
 		15D7829E193294FA00790D25 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				15D7829F193294FA00790D25 /* WordListsParser-Info.plist */,
 				15D782A0193294FA00790D25 /* InfoPlist.strings */,
 				15D782A3193294FA00790D25 /* main.m */,
 				15D782A5193294FA00790D25 /* WordListsParser-Prefix.pch */,
@@ -150,6 +165,21 @@
 				15D782BF193294FA00790D25 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15D782DC1932B41500790D25 /* WordLists */ = {
+			isa = PBXGroup;
+			children = (
+				15D782CC1932B40E00790D25 /* 2of4brif.txt */,
+				15D782CD1932B40E00790D25 /* 5desk.txt */,
+				15D782CE1932B40E00790D25 /* enable2k.txt */,
+				15D782CF1932B40E00790D25 /* letterpress.txt */,
+				15D782D01932B40E00790D25 /* sowpods.txt */,
+				15D782D11932B40E00790D25 /* TWL06.txt */,
+				15D782D21932B40E00790D25 /* wordsEn.txt */,
+				15D782D31932B40E00790D25 /* yawl.txt */,
+			);
+			name = WordLists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +258,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D782D81932B40E00790D25 /* sowpods.txt in Resources */,
+				15D782D51932B40E00790D25 /* 5desk.txt in Resources */,
+				15D782D41932B40E00790D25 /* 2of4brif.txt in Resources */,
 				15D782B0193294FA00790D25 /* Images.xcassets in Resources */,
+				15D782D91932B40E00790D25 /* TWL06.txt in Resources */,
+				15D782DB1932B40E00790D25 /* yawl.txt in Resources */,
 				15D782A2193294FA00790D25 /* InfoPlist.strings in Resources */,
+				15D782D61932B40E00790D25 /* enable2k.txt in Resources */,
+				15D782DA1932B40E00790D25 /* wordsEn.txt in Resources */,
+				15D782D71932B40E00790D25 /* letterpress.txt in Resources */,
 				15D782AB193294FA00790D25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,8 +416,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordListsParser/WordListsParser-Prefix.pch";
-				INFOPLIST_FILE = "WordListsParser/WordListsParser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "$(SRCROOT)/WordListsParserTests/WordListsParserTests-Info.plist";
+				PRODUCT_NAME = WordListsParser;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,8 +429,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordListsParser/WordListsParser-Prefix.pch";
-				INFOPLIST_FILE = "WordListsParser/WordListsParser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "$(SRCROOT)/WordListsParserTests/WordListsParserTests-Info.plist";
+				PRODUCT_NAME = WordListsParser;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -413,7 +451,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "WordListsParserTests/WordListsParserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WordListsParserTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -431,7 +469,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordListsParser/WordListsParser-Prefix.pch";
 				INFOPLIST_FILE = "WordListsParserTests/WordListsParserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WordListsParserTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -456,6 +494,7 @@
 				15D782C8193294FA00790D25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15D782C9193294FA00790D25 /* Build configuration list for PBXNativeTarget "WordListsParserTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +503,7 @@
 				15D782CB193294FA00790D25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -28,18 +28,38 @@
 }
 
 // most unique words
-// contains brands
-// contains british
+// percent brands
+// percent british
+// percent modern
 // contains "Scrabble" words
 // average word length
 // one-letter words
 - (NSString *) description{
     
+    bool hasOneLetter = [self containsOneLetterWords];
+    float percentBrand;
+    float percentBrit;
+    float percentScrabble;
+    float avgLength;
+    NSArray *
+
     return [[NSString alloc] initWithFormat:@"{\n name: %@\n numberOfWords: %lu\n}",name,(unsigned long)[list count]];
 
 }
 
-- (float) percentMatchWithComparisonList: (NSArray *){
+- (float) percentMatchWithComparisonList: (NSArray *) comparator{
+    
+    NSUInteger count = 0;
+    NSUInteger matched = 0;
+    
+    for(NSString * word in comparator){
+        count++;
+        if([self.list containsObject:word]){
+            matched++;
+        }
+    }
+    
+    return (float)matched/count;
 
 }
 @end

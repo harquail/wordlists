@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158D5A9B1932D3A7002E3232 /* brandNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A961932D3A7002E3232 /* brandNames.txt */; };
+		158D5A9C1932D3A7002E3232 /* britishWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A971932D3A7002E3232 /* britishWords.txt */; };
+		158D5A9D1932D3A7002E3232 /* modernWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A981932D3A7002E3232 /* modernWords.txt */; };
+		158D5A9E1932D3A7002E3232 /* oneLetterWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A991932D3A7002E3232 /* oneLetterWords.txt */; };
+		158D5A9F1932D3A7002E3232 /* scrabbleOnlyWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A9A1932D3A7002E3232 /* scrabbleOnlyWords.txt */; };
+		158D5AA21932D400002E3232 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D5AA11932D400002E3232 /* WordList.m */; };
+		158D5AA51932D438002E3232 /* ListAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D5AA41932D438002E3232 /* ListAnalyzer.m */; };
 		15D78298193294F900790D25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D78297193294F900790D25 /* Foundation.framework */; };
 		15D7829A193294FA00790D25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D78299193294FA00790D25 /* CoreGraphics.framework */; };
 		15D7829C193294FA00790D25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D7829B193294FA00790D25 /* UIKit.framework */; };
@@ -42,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		158D5A961932D3A7002E3232 /* brandNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = brandNames.txt; sourceTree = "<group>"; };
+		158D5A971932D3A7002E3232 /* britishWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = britishWords.txt; sourceTree = "<group>"; };
+		158D5A981932D3A7002E3232 /* modernWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = modernWords.txt; sourceTree = "<group>"; };
+		158D5A991932D3A7002E3232 /* oneLetterWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oneLetterWords.txt; sourceTree = "<group>"; };
+		158D5A9A1932D3A7002E3232 /* scrabbleOnlyWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scrabbleOnlyWords.txt; sourceTree = "<group>"; };
+		158D5AA01932D400002E3232 /* WordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordList.h; path = ../WordList.h; sourceTree = "<group>"; };
+		158D5AA11932D400002E3232 /* WordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordList.m; path = ../WordList.m; sourceTree = "<group>"; };
+		158D5AA31932D438002E3232 /* ListAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAnalyzer.h; sourceTree = "<group>"; };
+		158D5AA41932D438002E3232 /* ListAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAnalyzer.m; sourceTree = "<group>"; };
 		15D78294193294F900790D25 /* WordListsParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordListsParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D78297193294F900790D25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15D78299193294FA00790D25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,6 +110,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158D5A8B1932D352002E3232 /* ComparisonLists */ = {
+			isa = PBXGroup;
+			children = (
+				158D5A961932D3A7002E3232 /* brandNames.txt */,
+				158D5A971932D3A7002E3232 /* britishWords.txt */,
+				158D5A981932D3A7002E3232 /* modernWords.txt */,
+				158D5A991932D3A7002E3232 /* oneLetterWords.txt */,
+				158D5A9A1932D3A7002E3232 /* scrabbleOnlyWords.txt */,
+			);
+			name = ComparisonLists;
+			path = comparisonLists;
+			sourceTree = "<group>";
+		};
 		15D7828B193294F900790D25 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +156,11 @@
 		15D7829D193294FA00790D25 /* WordListsParser */ = {
 			isa = PBXGroup;
 			children = (
+				158D5AA31932D438002E3232 /* ListAnalyzer.h */,
+				158D5AA41932D438002E3232 /* ListAnalyzer.m */,
+				158D5AA01932D400002E3232 /* WordList.h */,
+				158D5AA11932D400002E3232 /* WordList.m */,
+				158D5A8B1932D352002E3232 /* ComparisonLists */,
 				15D782DC1932B41500790D25 /* WordLists */,
 				15D782A6193294FA00790D25 /* AppDelegate.h */,
 				15D782A7193294FA00790D25 /* AppDelegate.m */,
@@ -260,15 +294,20 @@
 			files = (
 				15D782D81932B40E00790D25 /* sowpods.txt in Resources */,
 				15D782D51932B40E00790D25 /* 5desk.txt in Resources */,
+				158D5A9F1932D3A7002E3232 /* scrabbleOnlyWords.txt in Resources */,
 				15D782D41932B40E00790D25 /* 2of4brif.txt in Resources */,
 				15D782B0193294FA00790D25 /* Images.xcassets in Resources */,
 				15D782D91932B40E00790D25 /* TWL06.txt in Resources */,
 				15D782DB1932B40E00790D25 /* yawl.txt in Resources */,
+				158D5A9E1932D3A7002E3232 /* oneLetterWords.txt in Resources */,
 				15D782A2193294FA00790D25 /* InfoPlist.strings in Resources */,
 				15D782D61932B40E00790D25 /* enable2k.txt in Resources */,
+				158D5A9C1932D3A7002E3232 /* britishWords.txt in Resources */,
 				15D782DA1932B40E00790D25 /* wordsEn.txt in Resources */,
 				15D782D71932B40E00790D25 /* letterpress.txt in Resources */,
 				15D782AB193294FA00790D25 /* Main.storyboard in Resources */,
+				158D5A9B1932D3A7002E3232 /* brandNames.txt in Resources */,
+				158D5A9D1932D3A7002E3232 /* modernWords.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D782AE193294FA00790D25 /* ViewController.m in Sources */,
+				158D5AA51932D438002E3232 /* ListAnalyzer.m in Sources */,
+				158D5AA21932D400002E3232 /* WordList.m in Sources */,
 				15D782A8193294FA00790D25 /* AppDelegate.m in Sources */,
 				15D782A4193294FA00790D25 /* main.m in Sources */,
 			);

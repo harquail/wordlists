@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "ListAnalyzer.h"
+#import "WordList.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[ListAnalyzer alloc] init];
     return YES;
 }
 							

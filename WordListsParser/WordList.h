@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface WordList : NSObject
+@property NSArray * list;
+@property NSString * name;
+
+- (instancetype)initFromFile: (NSString *) filename;
+- (NSString *) description;
 
 @end

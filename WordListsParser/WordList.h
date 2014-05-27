@@ -11,11 +11,12 @@
 @interface WordList : NSObject
 @property NSMutableArray * list;
 @property NSString * name;
-@property float percentBrand, percentBrit, percentScrabble, avgLength, percentModern;
-@property NSArray * tenUnique;
+@property float percentBrand, percentBrit, percentScrabble, percentModern, percentOffensive;
+@property NSArray * uniqueWords;
 @property NSDictionary * metaDict;
 
 - (instancetype)initFromFile: (NSString *) filename;
 - (NSString *) description;
 - (float) percentMatchWithComparisonList: (NSArray *) comparator;
+- (NSArray *) uniqueWordsWithMasterDictionary: (NSDictionary *) master;
 @end

@@ -9,7 +9,14 @@
 #import "WordList.h"
 
 @implementation WordList
-@synthesize list, name, percentBrand,tenUnique,percentBrit,percentScrabble, percentModern, metaDict;//metaDict is a combination of all dictionaries — with hit counts for each word;
+@synthesize list, name, percentBrand,uniqueWords,percentBrit,percentScrabble, percentModern ,percentOffensive, metaDict;//metaDict is a combination of all dictionaries — with hit counts for each word;
+
+#define const_maxwords 535501.000000
+#define const_maxbranding 0.826087
+#define const_maxscrabble 0.923077
+#define const_maxmodern 0.479675
+#define const_maxoffensive 0.391304
+#define const_maxbritishness 0.990815
 
 - (instancetype)initFromFile: (NSString *) filename
 {
@@ -45,9 +52,12 @@
 - (NSString *) description{
     
     float avglength = [self avgLength];
-    NSDictionary * uniques = [self uniqueWordsWithMasterDictionary:metaDict];
+    NSArray * uniques = [self uniqueWordsWithMasterDictionary:metaDict];
+    NSString *arrayStr = [uniques componentsJoinedByString:@","];
+    NSString *jsFunc = [NSString stringWithFormat:@"%@Uniques([%@])", self.name, arrayStr];
+
     
-    return [[NSString alloc] initWithFormat:@"{\n name: %@\n numberOfWords: %lu\n britishness: %f\n modernity: %f\n scabbleness: %f\n branding: %f\n avg length: %f\n unique words: %@}",name,(unsigned long)[list count],percentBrit,percentModern,percentScrabble,percentBrand, avglength, uniques];
+    return [[NSString alloc] initWithFormat:@"{\n name: %@\n numberOfWords: %f\n britishness: %f\n modernity: %f\n scabbleness: %f\n branding: %f\n offensive: %f\n avg length: %f\n unique words: %@}",name,[list count]*(1/const_maxwords),percentBrit*(1/const_maxbritishness),percentModern*(1/const_maxmodern),percentScrabble*(1/const_maxscrabble),percentBrand*(1/const_maxbranding),percentOffensive*(1/const_maxoffensive), avglength, jsFunc];
 
 }
 
@@ -67,9 +77,27 @@
 
 }
 
-- (NSDictionary *) uniqueWordsWithMasterDictionary: (NSDictionary *) master{
+- (float) avgLength{
+
+    NSUInteger i = 0;
+    for(NSString * word in list){
+        i+= [word length];
+    }
+    return (float)i/(float)[list count];
+}
+
+- (NSArray *) uniqueWordsWithMasterDictionary: (NSDictionary *) master{
     
-    return nil;
+    NSMutableArray * uniques= [[NSMutableArray alloc] init];
+    
+    for (NSString * word in list){
+    
+        if([master objectForKey:word] == [NSNumber numberWithInt:1]){
+            [uniques addObject:word];
+        }
+    }
+    
+    return uniques;
 
 }
 

@@ -9,10 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface WordList : NSObject
-@property NSArray * list;
+@property NSMutableArray * list;
 @property NSString * name;
+@property float percentBrand, percentBrit, percentScrabble, avgLength, percentModern;
+@property NSArray * tenUnique;
+@property NSDictionary * metaDict;
 
 - (instancetype)initFromFile: (NSString *) filename;
 - (NSString *) description;
-
+- (float) percentMatchWithComparisonList: (NSArray *) comparator;
 @end

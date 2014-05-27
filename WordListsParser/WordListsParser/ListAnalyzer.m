@@ -34,12 +34,50 @@ NSMutableArray * comparisonLists;
         for(NSString * comparisonPath in comparisonPathStrings)
             [comparisonLists addObject:[self comparisonArrayWithName:comparisonPath]];
         
-//        NSLog(@"count: %lu",(unsigned long)[comparisonLists count]);
-
-//        for(NSArray * ray in comparisonLists)
-//            NSLog(@"count: %lu",(unsigned long)[ray count]);
-        for(WordList * list in wordLists)
+        NSMutableDictionary * masterDict = [[NSMutableDictionary alloc] init];
+        for(WordList * list in wordLists){
+            
+            for (NSString * word in list.list){
+            
+                if([masterDict objectForKey:word] == nil){
+                    [masterDict setValue:[NSNumber numberWithInt:1] forKey:word];
+                }
+                else{
+//                    NSLog(@"reached");
+                    NSNumber * hits = [masterDict objectForKey:word];
+                    int hitsInt =[hits intValue];
+                    hitsInt++;
+                    [masterDict setValue:[NSNumber numberWithInt:hitsInt] forKey:word];
+                }
+            }
+            NSLog(@"processed list");
+        }
+        for(WordList * list in wordLists){
+            [list setMetaDict:masterDict];
             NSLog(@"%@",[list description]);
+        }
+        
+        NSLog(@"afro: %@",[masterDict objectForKey:@"afro"]);
+        NSLog(@"selfie: %@",[masterDict objectForKey:@"selfie"]);
+        NSLog(@"fuck: %@",[masterDict objectForKey:@"fuck"]);
+        NSLog(@"fuckface: %@",[masterDict objectForKey:@"fuckface"]);
+        NSLog(@"dongle: %@",[masterDict objectForKey:@"dongle"]);
+        NSLog(@"google: %@",[masterDict objectForKey:@"google"]);
+        NSLog(@"fuckshit: %@",[masterDict objectForKey:@"fuckshit"]);
+        NSLog(@"recurse: %@",[masterDict objectForKey:@"recurse"]);
+        NSLog(@"fovea: %@",[masterDict objectForKey:@"fovea"]);
+        NSLog(@"hippie: %@",[masterDict objectForKey:@"hippie"]);
+        NSLog(@"motherboard: %@",[masterDict objectForKey:@"motherboard"]);
+
+
+
+
+
+
+
+
+
+        
         
     }
     return self;

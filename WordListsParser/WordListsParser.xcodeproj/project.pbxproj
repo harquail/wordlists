@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1503C25819344A090016E1BF /* offensiveWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1503C25719344A090016E1BF /* offensiveWords.txt */; };
 		158D5A9B1932D3A7002E3232 /* brandNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A961932D3A7002E3232 /* brandNames.txt */; };
 		158D5A9C1932D3A7002E3232 /* britishWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A971932D3A7002E3232 /* britishWords.txt */; };
 		158D5A9D1932D3A7002E3232 /* modernWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D5A981932D3A7002E3232 /* modernWords.txt */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1503C25719344A090016E1BF /* offensiveWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offensiveWords.txt; sourceTree = "<group>"; };
 		158D5A961932D3A7002E3232 /* brandNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = brandNames.txt; sourceTree = "<group>"; };
 		158D5A971932D3A7002E3232 /* britishWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = britishWords.txt; sourceTree = "<group>"; };
 		158D5A981932D3A7002E3232 /* modernWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = modernWords.txt; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				158D5A971932D3A7002E3232 /* britishWords.txt */,
 				158D5A981932D3A7002E3232 /* modernWords.txt */,
 				158D5A991932D3A7002E3232 /* oneLetterWords.txt */,
+				1503C25719344A090016E1BF /* offensiveWords.txt */,
 				158D5A9A1932D3A7002E3232 /* scrabbleOnlyWords.txt */,
 			);
 			name = ComparisonLists;
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1503C25819344A090016E1BF /* offensiveWords.txt in Resources */,
 				15D782D81932B40E00790D25 /* sowpods.txt in Resources */,
 				15D782D51932B40E00790D25 /* 5desk.txt in Resources */,
 				158D5A9F1932D3A7002E3232 /* scrabbleOnlyWords.txt in Resources */,

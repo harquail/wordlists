@@ -25,7 +25,7 @@ NSMutableArray * comparisonLists;
 
         
         NSArray * listPathStrings = @[@"2of4brif",@"5desk",@"enable2k",@"letterpress",@"sowpods",@"TWL06",@"wordsEn",@"yawl"];
-        NSArray * comparisonPathStrings = @[@"brandNames",@"britishWords",@"modernWords",@"oneLetterWords",@"scrabbleOnlyWords"];
+        NSArray * comparisonPathStrings = @[@"brandNames",@"britishWords",@"modernWords",@"oneLetterWords",@"scrabbleOnlyWords",@"offensiveWords"];
         
         
         for(NSString * listPath in listPathStrings)
@@ -68,6 +68,15 @@ NSMutableArray * comparisonLists;
         NSLog(@"fovea: %@",[masterDict objectForKey:@"fovea"]);
         NSLog(@"hippie: %@",[masterDict objectForKey:@"hippie"]);
         NSLog(@"motherboard: %@",[masterDict objectForKey:@"motherboard"]);
+        NSLog(@"total words: %lu",(unsigned long)[masterDict count]);
+        NSLog(@"words in 1 dictionary: %lu",(unsigned long)[[masterDict allKeysForObject:[NSNumber numberWithInt:1]]count]);
+        NSLog(@"words in 2 dictionary: %lu",(unsigned long)[[masterDict allKeysForObject:[NSNumber numberWithInt:2]]count]);
+        NSLog(@"words in 3 dictionary: %lu",(unsigned long)[[masterDict allKeysForObject:[NSNumber numberWithInt:3]]count]);
+        NSLog(@"words in 4 dictionary: %lu",(unsigned long)[[masterDict allKeysForObject:[NSNumber numberWithInt:4]]count]);
+        NSLog(@"words in 5 dictionary: %lu",(unsigned long)[[masterDict allKeysForObject:[NSNumber numberWithInt:5]]count]);
+        NSLog(@"words in 6 dictionary: %lu",(unsigned long)[[masterDict allKeysForObject:[NSNumber numberWithInt:6]]count]);
+        NSLog(@"words in 7 dictionary: %lu",(unsigned long)[[masterDict allKeysForObject:[NSNumber numberWithInt:7]]count]);
+
 
 
 

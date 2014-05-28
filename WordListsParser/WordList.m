@@ -53,8 +53,8 @@
     
     float avglength = [self avgLength];
     NSArray * uniques = [self uniqueWordsWithMasterDictionary:metaDict];
-    NSString *arrayStr = [uniques componentsJoinedByString:@","];
-    NSString *jsFunc = [NSString stringWithFormat:@"%@Uniques([%@])", self.name, arrayStr];
+    NSString *arrayStr = [uniques componentsJoinedByString:@"</li><li>"];
+    NSString *jsFunc = [NSString stringWithFormat:@"%@Uniques(<ul><li>%@</li></ul>)", self.name, arrayStr];
 
     
     return [[NSString alloc] initWithFormat:@"{\n name: %@\n numberOfWords: %f\n britishness: %f\n modernity: %f\n scabbleness: %f\n branding: %f\n offensive: %f\n avg length: %f\n unique words: %@}",name,[list count]*(1/const_maxwords),percentBrit*(1/const_maxbritishness),percentModern*(1/const_maxmodern),percentScrabble*(1/const_maxscrabble),percentBrand*(1/const_maxbranding),percentOffensive*(1/const_maxoffensive), avglength, jsFunc];
